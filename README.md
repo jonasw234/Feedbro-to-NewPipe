@@ -25,4 +25,4 @@ Steps to export [Feedbro](https://nodetics.com/feedbro/) subscriptions:
 Steps to import [NewPipe](https://newpipe.schabi.org/) subscriptions
 1. Go to your subscriptions
 2. Click on Import/Export
-3. Select import from previous export and select NewPipe-Subscriptions.json.
+3. Select import from YouTube export and select NewPipe-Subscriptions.csv.
