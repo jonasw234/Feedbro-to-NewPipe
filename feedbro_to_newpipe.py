@@ -35,15 +35,9 @@ def main(feedbro_input: str, newpipe_output: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        main(
-            "/mnt/f/Syncthing/Settings/Feedbro Subscriptions.opml",
-            "/mnt/r/NewPipe Subscriptions.csv",
-        )
-    elif len(sys.argv) != 3:
+    if len(sys.argv) != 3:
         print(
             f"Usage: {basename(__file__)} Feedbro-Subscriptions.opml NewPipe-Subscriptions.csv"
         )
         sys.exit(1)
-    else:
-        main(*sys.argv[1:])
+    main(*sys.argv[1:])
