@@ -28,9 +28,11 @@ def main(feedbro_input: str, newpipe_output: str):
     # Export to NewPipe csv file
     with open(newpipe_output, "w", encoding="utf-8") as newpipe_subscriptions:
         newpipe_csv = csv.writer(newpipe_subscriptions)
-        newpipe_csv.writerow(['Channel Id', 'Channel Url', 'Channel Title'])
+        newpipe_csv.writerow(["Channel Id", "Channel Url", "Channel Title"])
         for title, url in youtube_channels.items():
-            newpipe_csv.writerow([url[len("https://www.youtube.com/channel/"):], url, title])
+            newpipe_csv.writerow(
+                [url[len("https://www.youtube.com/channel/") :], url, title]
+            )
     print(f"Export completed and saved to {newpipe_output}.")
 
 
